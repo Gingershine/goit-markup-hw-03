@@ -7,6 +7,26 @@ body {
     /* ul { list-style-type: none;    }*/
         /* #2E2F42 */
 }
+.container {
+    margin: 0 auto;
+    max-width: 1158px;
+    padding: 0 15px;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .logo {
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
@@ -15,6 +35,8 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
     
 }
 
@@ -36,11 +58,34 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+ .address-list {
+    display: flex;
+    gap: 40px;
 
+ }
 
 .address-link:hover,
 .address-link:focus {
     color: #404BBF;
+}
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-grow: 1;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .nav-link {
@@ -50,6 +95,15 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: inline-block;
+    padding: 24px 0;
+}
+
+.nav-list {
+display: flex;
+gap: 40px;
+flex-grow: 1;
+justify-content: center;
 }
 
 .nav-link:hover,
@@ -58,16 +112,34 @@ address {
     color: #404BBF;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.hero-section {
-    background-color: #2E2F42;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
+.hero-inner {
+    background-color: #2E2F42;
+    padding: 188px 0;
 }
 .hero-title {
     color: #FFF;
@@ -76,6 +148,9 @@ ul {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 48px;
+    max-width: 496px;
+    margin: 0 auto;
 }
 
 .button {
@@ -86,6 +161,10 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    padding: 16px 32px;
+    display: inline-flex;
+    margin: 48px auto 0;
+    display: block;
 
 }
 .button:hover,
@@ -94,8 +173,21 @@ ul {
     
 }
 
-.features {
-    background-color: #fff;
+.section {
+    padding: 120px 0;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.feature-item {
+    display: flex;
+    max-width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .features-title {
@@ -114,10 +206,17 @@ ul {
 
 .team {
     background-color: #F4F4FD;
-}
+    }
+
 
 .team-list {
-    background-color: #FFF
+    display: flex;
+    gap: 24px;
+}
+
+.team-item {
+    background-color: #FFF;
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-title {
@@ -128,6 +227,7 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
 }
 .member-name {
     color: #2E2F42;
@@ -138,6 +238,22 @@ ul {
     text-align: center;
 }
 
+.member {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    
+}
+
+.member-info {
+display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 32px 0;
+
+}
+
 .member-text {
     font-weight: 400;
     line-height: 1.5;
@@ -145,8 +261,22 @@ ul {
     text-align: center;
 }
 
-.portfolio {
+.portfolio-inner {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
 
+.portfolio-info {
+display: flex;
+padding: 0px 16px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+margin: 32px 0;
+      
 }
 
 .portfolio-title {
@@ -157,6 +287,7 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .portfolio-subtitle {
@@ -175,7 +306,9 @@ ul {
 
 .footer {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
+
 
 .footer-logo {
     color: #4D5AE5;
@@ -185,6 +318,8 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-studio {
@@ -194,5 +329,6 @@ ul {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
     
 }
