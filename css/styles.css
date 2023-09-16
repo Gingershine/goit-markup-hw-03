@@ -189,6 +189,8 @@ border-radius: 4px;
 .features-list {
     display: flex;
     gap: 24px;
+    row-gap: 48px;
+    
 }
 
 .feature-item {
@@ -215,12 +217,11 @@ border-radius: 4px;
     background-color: #F4F4FD;
     }
 
-
 .team-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    
+    row-gap: 48px;
 }
 
 .team-item {
@@ -249,8 +250,6 @@ border-radius: 4px;
     letter-spacing: 0.02em;
     text-align: center;
 }
-
-
 
 .member-info {
     display: flex;
