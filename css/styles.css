@@ -83,10 +83,7 @@ address {
 .header-nav {
     display: flex;
     align-items: center;
-    gap: 24px;
-    flex-grow: 1;
-    border-bottom: 1px solid #E7E9FC;
-}
+    }
 
 .nav-link {
     font-family: inherit;
@@ -251,13 +248,7 @@ border-radius: 4px;
 }
 
 .member-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
     padding: 32px 0;
-
 }
 
 .member-text {
@@ -271,8 +262,7 @@ border-radius: 4px;
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
-    row-gap: 48px;
-    
+    row-gap: 48px;    
 }
 
 .portfolio-info {
