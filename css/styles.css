@@ -189,7 +189,6 @@ border-radius: 4px;
 .features-list {
     display: flex;
     gap: 24px;
-    row-gap: 48px;
     
 }
 
@@ -220,8 +219,7 @@ border-radius: 4px;
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    row-gap: 48px;
+    gap: 24px;    
 }
 
 .team-item {
@@ -249,6 +247,7 @@ border-radius: 4px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px
 }
 
 .member-info {
